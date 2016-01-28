@@ -2,6 +2,7 @@ package com.example.hiyoriaya.grongi;
 
 import android.app.Activity;
 import android.content.Context;
+import android.support.v4.app.ShareCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
@@ -60,7 +61,10 @@ public class MainActivity extends Activity implements View.OnTouchListener,View.
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-        //シェア処理
+        ShareCompat.IntentBuilder builder = ShareCompat.IntentBuilder.from(MainActivity.this);
+        builder.setText(result.getText().toString());
+        builder.setType("text/plain");
+        builder.startChooser();
         return false;
     }
 
@@ -329,7 +333,7 @@ public class MainActivity extends Activity implements View.OnTouchListener,View.
             }else if(String.valueOf(gtxt.charAt(i)).equals("っ")){
                 chars[i] = chars[i+1];
             }else{
-                chars[i] = "";
+                chars[i] = String.valueOf(gtxt.charAt(i));
             }
         }
         gtxt = "";

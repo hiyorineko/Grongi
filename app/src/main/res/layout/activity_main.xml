@@ -49,10 +49,30 @@
         android:layout_alignRight="@+id/share"
         android:layout_alignEnd="@+id/share" />
 
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/hardbound"
+        android:id="@+id/howto"
+        android:layout_above="@+id/tshare"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" How to"
+        android:id="@+id/hw"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/tshare"
+        android:layout_centerHorizontal="true" />
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
 
         <TextView
             android:layout_width="wrap_content"

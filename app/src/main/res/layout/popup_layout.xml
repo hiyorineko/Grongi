@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/popuptxt"
+        android:text="【使い方】\n\nテキストフィールドに文字列を入力してEnterを押してください。\n変換モード：ひらがなをグロンギ語に変換します。\n翻訳モード：グロンギををひらがなに変換します。\nShareボタン：変換翻訳された文字列を別のアプリへ投げることができます。\n\n※注意\nグロンギ語では一つの音に複数の意味を持つことがあります。(例：&quot;ガ&quot;→&quot;あ&quot;or&quot;が&quot;or&quot;さ&quot;)\nなので、翻訳モードは対応する日本語を全て表示しています。見づらくなっていますがご了承ください。"
+        android:textSize="15sp"
+        />
+</LinearLayout>
